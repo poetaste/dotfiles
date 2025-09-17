@@ -1,0 +1,15 @@
+* {
+  all: unset;
+}
+
+tooltip {
+  background-color: #14171c;
+  color: #b8bfe5;
+  font-family: JetbrainsMono Nerd Font;
+  font-weight: Bold;
+  font-size: 1rem;
+}
+
+@import "colors.scss";
+@import "calendar/calendar.scss";
+@import "player/player.scss";

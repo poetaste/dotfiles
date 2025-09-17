@@ -1,0 +1,127 @@
+$bg:        #1d2021; // background
+$bg-alt:    #282828; // slightly lighter background
+$fg:        #ebdbb2;
+
+$red:       #cc241d;
+$green:     #98971a;
+$yellow:    #d79921;
+$blue:      #458588;
+$purple:    #b16286; // magenta in your code
+$aqua:      #689d6a;
+$orange:    #d65d0e;
+$gray:      #a89984;
+
+
+.player {
+  font-family: "JetBrainsMono Nerd Font", "Material Design Icons Desktop";
+  background-color: $bg;
+  padding: 0.6rem;
+  min-height: 12rem;
+  border-radius: 0rem;
+  background: 
+    linear-gradient($bg, $bg) padding-box,
+    linear-gradient( $green ) border-box;
+  border: 3px solid transparent;
+
+  .player-art {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 0.1rem black;
+    border-radius: 0rem;
+    min-width: 22rem;
+
+    .player-info {
+      border-radius: 0rem;
+      background: linear-gradient(to right, $bg, rgba($bg-alt, 0.5));
+      padding: 0.65rem;
+
+      .player-shuffle,
+      .player-loop {
+        font-size: 1rem;
+        text-shadow: 0 0 0.2rem black;
+        color: $yellow;
+      }
+
+      .spotify-icon {
+        font-size: 1.25rem;
+        color: $green;
+        text-shadow: 0 0 0.2rem black;
+      }
+
+      .mpd-icon {
+        font-size: 1.25rem;
+        color: $purple;
+        text-shadow: 0 0 0.2rem black;
+      }
+
+      .player-title {
+        font-style: italic;
+        font-family: JetBrainsMono Nerd Font;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: $fg;
+        text-shadow: 0 0 0.5rem rgba($bg-alt, 0.5);
+      }
+
+      .player-artist,
+      .player-time {
+        font-family: JetBrainsMono Nerd Font;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: $fg;
+        text-shadow: 0 0 0.5rem rgba($bg-alt, 0.5);
+      }
+
+      .player-bar scale trough highlight {
+        all: unset;
+        background-image: linear-gradient(to right, darken($green, 15%), $green);
+        border-radius: 2rem;
+      }
+
+      .player-bar scale trough {
+        all: unset;
+        background-color: rgba($fg, 0.3);
+        box-shadow: 0px 0px 2px 1px rgba(black, 0.5);
+        border-radius: 1rem;
+        min-height: 0.35rem;
+        margin: 0rem 0.2rem 0.2rem 0rem;
+      }
+
+      .player-position {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: $fg;
+      }
+    }
+  }
+
+  .min {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 1.1rem;
+    padding: 0 0.9rem;
+    color: $red;
+    &:hover {
+      color: $purple;
+    }
+  }
+
+  .player-controls {
+    padding: 0rem 0.7rem 0rem 1rem;
+    border-radius: 1rem;
+
+    .player-toggle,
+    .player-previous,
+    .player-next {
+      font-size: 1.6rem;
+      color: $fg;
+    }
+
+    button {
+      &:hover {
+        color: $purple;
+      }
+    }
+  }
+}
+

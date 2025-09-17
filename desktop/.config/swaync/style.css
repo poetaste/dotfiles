@@ -1,0 +1,291 @@
+      /* Gruvbox Dark Hard Palette */
+      @define-color dark-bg #1d2021;
+      @define-color darker-bg #282828;
+      @define-color darkest-bg #1b1b1b;
+      @define-color hover-bg #32302f;
+      @define-color light-cream #fbf1c7;
+      @define-color cream #ebdbb2;
+      @define-color gray #928374;
+      @define-color green #98971a;
+      @define-color red #cc241d;
+      @define-color bright-red #fb4934;
+      @define-color blue #458588;
+      @define-color yellow #d79921;
+      @define-color orange #d65d0e;
+
+      * {
+        font-family: "JetBrainsMono Nerd Font";
+        font-weight: bold;
+        border-radius: 0;
+      }
+
+      .control-center .notification-row:focus,
+      .control-center .notification-row:hover {
+        opacity: 1;
+        background: @darker-bg;
+      }
+
+      .notification-row {
+        outline: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .notification,
+      .notification-content,
+      .notification-action,
+      .notification-default-action,
+      .inline-reply-entry,
+      .inline-reply-button,
+      .widget-title,
+      .widget-title>button,
+      .widget-dnd,
+      .widget-dnd>switch,
+      .widget-dnd>switch slider,
+      .widget-label>label,
+      .widget-buttons-grid,
+      .widget-buttons-grid>flowbox>flowboxchild>button,
+      .widget-volume,
+      .widget-backlight,
+      .widget-mpris,
+      .widget-mpris>box>button,
+      .widget-mpris-player,
+      .widget-mpris-album-art {
+        border-radius: 0;
+      }
+
+      .notification {
+        background: @dark-bg;
+        border: 1px solid @green;
+        margin: 0px;
+        box-shadow: 4px 4px 0px @green;
+      }
+
+      .close-button {
+        background: @red;
+        color: @dark-bg;
+        text-shadow: none;
+        padding: 0;
+        margin-top: 5px;
+        margin-right: 5px;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+        border-radius: 0;
+        border: none;
+        box-shadow: 2px 2px 0px @green;
+      }
+
+      .notification:hover .close-button {
+        opacity: 1;
+      }
+
+      .close-button:hover {
+        background: @bright-red;
+        box-shadow: 3px 3px 0px @green;
+        transition: all 0.15s ease-in-out;
+      }
+
+      .notification-action {
+        border: 2px solid @green;
+        border-top: none;
+      }
+
+      .notification-default-action:hover,
+      .notification-action:hover {
+        color: @cream;
+        background: @dark-bg;
+      }
+
+      .inline-reply-entry {
+        background: @darker-bg;
+        color: @cream;
+        caret-color: @cream;
+        border: 1px solid @gray;
+      }
+
+      .inline-reply-button {
+        margin-top: 4px;
+        margin-left: 4px;
+        background: @darkest-bg;
+        border: 1px solid @gray;
+        color: @cream;
+      }
+
+      .inline-reply-button:disabled {
+        background: transparent;
+        color: @gray;
+        border: 1px solid transparent;
+      }
+
+      .inline-reply-button:hover {
+        background: @hover-bg;
+      }
+
+      .summary {
+        font-size: 16px;
+        color: @green;
+      }
+
+      .time {
+        font-size: 16px;
+        color: @cream;
+        margin-right: 24px;
+      }
+
+      .body {
+        padding-top: 3px;
+        font-size: 14px;
+        color: @cream;
+      }
+
+      .control-center {
+        background: @dark-bg;
+        border: 2px solid @green;
+      }
+
+      .widget-title {
+        color: @green;
+        background: @darker-bg;
+        padding: 5px 10px;
+        margin: 10px;
+        font-size: 1.5rem;
+        box-shadow: 3px 3px 0px @green;
+      }
+
+      .widget-title>button {
+        font-size: 1rem;
+        color: @cream;
+        background: @darkest-bg;
+        box-shadow: 2px 2px 0px @green;
+      }
+
+      .widget-title>button:hover {
+        background: @red;
+        color: @dark-bg;
+        box-shadow: 3px 3px 0px @green;
+      }
+
+      .widget-dnd {
+        background: @darker-bg;
+        padding: 5px 10px;
+        margin: 5px 10px;
+        font-size: large;
+        color: @blue;
+        box-shadow: 3px 3px 0px @green;
+      }
+
+      .widget-dnd>switch {
+        background: @blue;
+        border-radius: 0;
+      }
+
+      .widget-dnd>switch:checked {
+        background: @yellow;
+        border: solid @yellow;
+      }
+
+      .widget-label>label {
+        font-size: 1rem;
+        color: @cream;
+        margin: 10px;
+      }
+
+      .widget-buttons-grid {
+        font-size: x-large;
+        padding: 5px;
+        margin: 10px;
+        background: @darker-bg;
+        box-shadow: 3px 3px 0px @green;
+      }
+
+      .widget-buttons-grid>flowbox>flowboxchild>button {
+        margin: 3px;
+        background: @dark-bg;
+        color: @cream;
+        transition: background-color 0.15s ease-in-out;
+        box-shadow: 2px 2px 0px @yellow;
+      }
+
+      .widget-buttons-grid>flowbox>flowboxchild>button:hover {
+        background: @yellow;
+        color: @dark-bg;
+        box-shadow: 3px 3px 0px @orange;
+      }
+
+      .widget-buttons-grid>flowbox>flowboxchild>button:checked {
+        background: @green;
+        color: @dark-bg;
+        box-shadow: 3px 3px 0px @red;
+      }
+
+      .widget-volume,
+      .widget-backlight {
+        background: @darker-bg;
+        padding: 5px;
+        margin: 5px 10px;
+        font-size: 2rem;
+        color: @green;
+        box-shadow: 3px 3px 0px @green;
+      }
+
+      /* Volume and Backlight Sliders */
+      .widget-volume scale,
+      .widget-backlight scale {
+        min-height: 8px;
+      }
+
+      .widget-volume scale trough,
+      .widget-backlight scale trough {
+        min-height: 8px;
+        border-radius: 0;
+        background: @darkest-bg;
+        border: 1px solid @gray;
+      }
+
+      .widget-volume scale highlight,
+      .widget-backlight scale highlight {
+        min-height: 8px;
+        border-radius: 0;
+        background: @green;
+        border: none;
+      }
+
+      .widget-volume scale slider,
+      .widget-backlight scale slider {
+        min-width: 10px;
+        min-height: 10px;
+        border-radius: 0;
+        background: @green;
+        border: 2px solid @green;
+      }
+
+      .widget-volume scale slider:hover,
+      .widget-backlight scale slider:hover {
+        background: @green;
+      }
+
+      .widget-mpris {
+        color: @cream;
+        background: @darker-bg;
+        padding: 5px 10px;
+        margin: 5px 10px 5px 10px;
+        box-shadow: 3px 3px 0px @green;
+      }
+
+      .widget-mpris>box>button,
+      .widget-mpris-player,
+      .widget-mpris-album-art {
+        border-radius: 0;
+        box-shadow: none;
+        padding: 5px 10px;
+        margin: 10px 0 0 0;
+      }
+
+      progress, trough {
+        background-color: #3c3836; /* background of bar */
+      }
+
+      progressbar > trough > progress {
+        background-color: @green; /* Gruvbox green */
+      }
+

@@ -1,0 +1,59 @@
+window {
+    background-color: rgba(40, 40, 40, 0.85);
+    color: #ebdbb2
+}
+
+/* search entry */
+entry {
+    background-color: rgba(60, 56, 54, 0.6);
+    color: #ebdbb2;
+    border: 1px solid rgba(168, 153, 132, 0.3)
+}
+
+entry:focus {
+    border-color: #d79921;
+    background-color: rgba(60, 56, 54, 0.8)
+}
+
+button, image {
+    background: none;
+    border: none;
+    color: #ebdbb2;
+    transition: all 0.2s ease
+}
+
+button:hover {
+    background-color: rgba(235, 219, 178, 0.08);
+    color: #ebdbb2
+}
+
+/* in case you wanted to give category buttons a different look */
+#category-button {
+    margin: 0 10px 0 10px;
+    background: none;
+    border: none;
+    transition: all 0.2s ease
+}
+
+#category-button:hover {
+    background-color: rgba(235, 219, 178, 0.1)
+}
+
+#pinned-box {
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #a89984
+}
+
+#files-box {
+    padding: 5px;
+    border: 1px dotted #83a598;
+    border-radius: 15px;
+    background-color: rgba(69, 133, 136, 0.1)
+}
+
+/* math operation result label */
+#math-label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #fabd2f
+}

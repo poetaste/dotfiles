@@ -1,0 +1,227 @@
+{
+  "layer": "top",
+  "output": [ "eDP-1" ],
+
+  "modules-left": [
+    "custom/launcher",
+    "idle_inhibitor",
+    "mpris",
+    "wireplumber",
+    "custom/cava"
+  ],
+
+  "modules-center": [
+    "hyprland/workspaces",
+    "clock",
+    "wlr/taskbar"
+  ],
+
+  "modules-right": [
+    "custom/bluetooth",
+    "network",
+    "power-profiles-daemon",
+    "cpu",
+    "memory",
+    "tray",
+    "battery",
+    "custom/swaync"
+  ],
+
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "󰒳",
+      "deactivated": "󰒲"
+    },
+    "tooltip": true,
+    "tooltip-format-activated": "Idle inhibitor: ON",
+    "tooltip-format-deactivated": "Idle inhibitor: OFF"
+  },
+
+  "power-profiles-daemon": {
+    "format": "{icon} {profile}",
+    "tooltip": true,
+    "tooltip-format": "Power profile: <b>{profile}</b>\nDriver: {driver}",
+    "format-icons": {
+      "performance": "󰓅",
+      "balanced": "󰾅",
+      "power-saver": "󰾆"
+    },
+    "on-click": "powerprofilesctl set performance",
+    "on-click-right": "powerprofilesctl set power-saver",
+    "on-click-middle": "powerprofilesctl set balanced"
+  },
+
+  "custom/cava": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/cava.sh"
+  },
+
+  "wireplumber": {
+    "format": "{icon} {volume}%",
+    "format-icons": ["", "", " "],
+    "format-muted": "",
+    "max-volume": 120,
+    "scroll-step": 2,
+    "states": {
+      "mute": 0,
+      "low": 1,
+      "medium": 40,
+      "high": 80,
+      "overamplified": 100
+    },
+    "on-click-middle": "pavucontrol",
+    "on-click-right": "easyeffects",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+  },
+
+  "custom/mpris-prev": {
+    "format": "⏮",
+    "on-click": "playerctl previous",
+    "tooltip": false
+  },
+
+  "custom/mpris-next": {
+    "format": "⏭",
+    "on-click": "playerctl next",
+    "tooltip": false
+  },
+
+  "network": {
+    "tooltip": true,
+    "format-wifi": "  {essid} ({signalStrength}%)",
+    "format-ethernet": "󰈀 {ifname}",
+    "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>",
+    "format-linked": "󰈀 {ifname} (No IP)",
+    "format-disconnected": "󰖪 ",
+    "tooltip-format-disconnected": "󰖪 Disconnected",
+    "interval": 2,
+    "on-click": "rofi-network-manager"
+  },
+
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "on-scroll-up": "brightnessctl set 1%+",
+    "on-scroll-down": "brightnessctl set 1%-",
+    "min-length": 6
+  },
+
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ]
+  },
+
+  "clock": {
+    "format": "{:%I:%M %p}",
+    "format-alt": "{:%m-%d-%Y}",
+    "tooltip": false,
+    "on-click": "eww open date --toggle",
+    "on-click-right": "mode"
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "on-click": "kitty -- btop",
+    "tooltip": true,
+    "states": {
+      "warning": 70,
+      "critical": 90
+    }
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 5
+  },
+
+  "memory": {
+    "interval": 30,
+    "format": "  {used:0.1f}G/{total:0.1f}G",
+    "max-length": 20,
+    "states": {
+      "warning": 75,
+      "critical": 90
+    }
+  },
+
+  "custom/launcher": {
+    "format": "",
+    "on-click": "~/.config/waybar/scripts/launcher.sh"
+  },
+
+  "custom/bluetooth": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/bluetooth-display.sh",
+    "interval": 10,
+    "on-click": "blueman-manager",
+    "return-type": "plain",
+    "tooltip": false,
+    "max-length": 25
+  },
+
+  "mpris": {
+    "format": "{player_icon}  {dynamic}",
+    "format-paused": "{status_icon} {dynamic}",
+    "format-stopped": "",
+    "ignore-list": ["vesktop"],
+    "player-icons": {
+      "brave": "",
+      "default": "",
+      "spotify": "",
+      "vlc": "",
+      "mpv": ""
+    },
+    "status-icons": {
+      "paused": "▶",
+      "playing": "⏸"
+    },
+    "max-length": 40,
+    "tooltip": true,
+    "on-click": "eww open music --toggle",
+    "on-click-right": "playerctl play-pause"
+  },
+
+  "custom/swaync": {
+    "format": "󰎟",
+    "tooltip": "Notification Center",
+    "on-click": "swaync-client -t",
+    "on-click-right": "swaync-client -rs"
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "hyprctl dispatch workspace {id}",
+    "format-icons": {
+      "1": "1", "2": "2", "3": "3", "4": "4", "5": "5",
+      "6": "6", "7": "7", "8": "8", "9": "9", "10": "10",
+      "11": "11", "12": "12", "13": "13", "14": "14", "15": "15",
+      "16": "16", "17": "17", "18": "18", "19": "19", "20": "20"
+    },
+    "sort-by-number": true
+  },
+
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 16,
+    "icon-theme": "Gruvbox-Plus-Dark",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": ["foot", "vesktop"],
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    },
+    "markup": true,
+    "all-outputs": false
+  }
+}
+
