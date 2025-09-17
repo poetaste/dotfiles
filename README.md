@@ -62,6 +62,8 @@ It’s messy, but it works for me.
 
 > - **Widget's music player executable:** `MediaControl` → `/usr/local/bin/`
 
+> - **Gruvbox TTY Theme for the funsies:** `gruvbox-tty.service` → `/etc/systemd/system/` and then `# systemctl enable gruvbox-tty.service`
+
 ---
 
 
