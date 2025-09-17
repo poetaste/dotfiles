@@ -22,16 +22,21 @@ It’s messy, but it works for me.
 
 ## What’s Inside
 
-- **Operating System:** Opensuse Tumbleweed
-- **Window Manager:** [Hyprland](https://github.com/hyprwm/Hyprland)
-- **Colors:** [Gruvbox Dark](https://github.com/morhetz/gruvbox)
-- **Widgets:** eww
-- **Bar:** Waybar
-- **Terminal:** Kitty
-- **Fonts:** JetBrainsMono Nerd Font, Pacifico, Montserrat
-- **GTK Theme:** [Gruvbox Dark Hard](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme?tab=readme-ov-file)
-- **Icons Theme:** [Gruvbox Plus Dark](https://github.com/SylEleuth/gruvbox-plus-icon-pack)
-- **Cursor Theme:** [ArcAurora Cursors](https://github.com/yeyushengfan258/ArcAurora-Cursors)
+**Core**
+- OS: openSUSE Tumbleweed
+- WM: [Hyprland](https://github.com/hyprwm/Hyprland)
+
+**Look & Feel**
+- Colors: [Gruvbox Dark](https://github.com/morhetz/gruvbox)
+- GTK Theme: [Gruvbox Dark Hard](…)
+- Icons: [Gruvbox Plus Dark](…)
+- Cursor: [ArcAurora](…)
+
+**Apps**
+- Bar: Waybar
+- Widgets: eww
+- Terminal: Kitty
+- Fonts: JetBrainsMono Nerd Font, Pacifico, Montserrat
 
 ---
 
