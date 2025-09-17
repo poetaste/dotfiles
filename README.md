@@ -46,9 +46,6 @@ It’s messy, but it works for me.
 |------|---------|
 | ![yast ig](screenshots/yast.png) | ![hyprlock](screenshots/hyprlock.png) |
 
-
-*(add your own screenshots in `screenshots/` folder)*
-
 ---
 
 
