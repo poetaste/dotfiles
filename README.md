@@ -1,11 +1,9 @@
 
 # Fen's Rice
 
-> Just my own **Gruvbox-flavored Hyprland** setup.
+ Just my own **Gruvbox-flavored Hyprland** setup.
   
-> ⚠️ This is not a plug-and-play dotfiles repo — a lot of the paths and scripts are hardcoded to my machine.
-
-![desktop](screenshots/rice.png)
+ ⚠️ This is not a plug-and-play dotfiles repo — a lot of the paths and scripts are hardcoded to my machine.
 
 ---
 
