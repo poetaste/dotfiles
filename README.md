@@ -24,11 +24,14 @@ It’s messy, but it works for me.
 
 - **Operating System:** Opensuse Tumbleweed
 - **Window Manager:** [Hyprland](https://github.com/hyprwm/Hyprland)
-- **Colors:** Classic [Gruvbox Dark](https://github.com/morhetz/gruvbox)
-- **Bar/Widgets:** eww (a few custom scripts)
+- **Colors:** [Gruvbox Dark](https://github.com/morhetz/gruvbox)
+- **Widgets:** eww
+- **Bar:** Waybar
 - **Terminal:** Kitty
-- **Fonts:** JetBrainsMono Nerd Font
-- **GTK Theme:** Gruvbox Material
+- **Fonts:** JetBrainsMono Nerd Font, Pacifico, Montserrat
+- **GTK Theme:** [Gruvbox Dark Hard](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme?tab=readme-ov-file)
+- **Icons Theme:** [Gruvbox Plus Dark](https://github.com/SylEleuth/gruvbox-plus-icon-pack)
+- **Cursor Theme:** [ArcAurora Cursors](https://github.com/yeyushengfan258/ArcAurora-Cursors)
 
 *(Some configs call absolute paths like `/home/myuser/scripts/…` — change these if you try them yourself.)*
 
