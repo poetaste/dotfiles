@@ -33,8 +33,6 @@ It’s messy, but it works for me.
 - **Icons Theme:** [Gruvbox Plus Dark](https://github.com/SylEleuth/gruvbox-plus-icon-pack)
 - **Cursor Theme:** [ArcAurora Cursors](https://github.com/yeyushengfan258/ArcAurora-Cursors)
 
-*(Some configs call absolute paths like `/home/myuser/scripts/…` — change these if you try them yourself.)*
-
 ---
 
 ## Screenshots
