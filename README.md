@@ -26,7 +26,7 @@ It’s messy, but it works for me.
 - **Window Manager:** [Hyprland](https://github.com/hyprwm/Hyprland)
 - **Colors:** Classic [Gruvbox Dark](https://github.com/morhetz/gruvbox)
 - **Bar/Widgets:** eww (a few custom scripts)
-- **Terminal:** Alacritty
+- **Terminal:** Kitty
 - **Fonts:** JetBrainsMono Nerd Font
 - **GTK Theme:** Gruvbox Material
 
