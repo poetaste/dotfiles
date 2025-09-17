@@ -36,11 +36,16 @@ It’s messy, but it works for me.
 
 ## Screenshots
 
+### Main
 | Normal Desktop | Tiling |
 |-----------------|-------|
 | ![desktop](screenshots/fetch.png) | ![tiling](screenshots/wuhh.png) |
-| yast | Hyprlock |
+
+### Extras
+| YaST | Hyprlock |
+|------|---------|
 | ![yast ig](screenshots/yast.png) | ![hyprlock](screenshots/hyprlock.png) |
+
 
 *(add your own screenshots in `screenshots/` folder)*
 
