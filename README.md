@@ -7,6 +7,20 @@
 
 ---
 
+## Screenshots
+
+### Main
+| Normal Desktop | Tiling |
+|-----------------|-------|
+| ![desktop](screenshots/fetch.png) | ![tiling](screenshots/wuhh.png) |
+
+### Extras
+| YaST | Hyprlock |
+|------|---------|
+| ![yast ig](screenshots/yast.png) | ![hyprlock](screenshots/hyprlock.png) |
+
+---
+
 ## Why
 
 I built this because I wanted:
@@ -49,20 +63,5 @@ It’s messy, but it works for me.
 > - **Widget's music player executable:** `MediaControl` → `/usr/local/bin/`
 
 ---
-
-## Screenshots
-
-### Main
-| Normal Desktop | Tiling |
-|-----------------|-------|
-| ![desktop](screenshots/fetch.png) | ![tiling](screenshots/wuhh.png) |
-
-### Extras
-| YaST | Hyprlock |
-|------|---------|
-| ![yast ig](screenshots/yast.png) | ![hyprlock](screenshots/hyprlock.png) |
-
----
-
 
 
