@@ -1,0 +1,11 @@
+[Unit]
+Description=Set Gruvbox colors for TTY
+After=multi-user.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/bash -c 'for tty in /dev/tty[1-6]; do printf "\\e]P0282828\\e]P8928374\\e]P1cc241d\\e]P9fb4934\\e]P298971a\\e]Pab8bb26\\e]P3d79921\\e]Pbfabd2f\\e]P4458588\\e]Pc83a598\\e]P5b16286\\e]Pdd3869b\\e]P6689d6a\\e]Pe8ec07c\\e]P7a89984\\e]Pfebdbb2" > "$tty"; done'
+
+[Install]
+WantedBy=multi-user.target
