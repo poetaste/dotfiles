@@ -44,13 +44,5 @@ It’s messy, but it works for me.
 
 ---
 
-## If You Still Want to Try It…
-
-There’s no automated install.  
-But if you want to peek or copy pieces:
-
-```bash
-git clone https://github.com/<your-username>/hyprland-gruvbox-rice.git
-
 
 
