@@ -46,7 +46,8 @@ It’s messy, but it works for me.
 > It’s highly customized and contains hard-coded paths, so please adapt it to your own setup if you want to use it.
 
 > **Note**
-> - **YaST Qt theme fix:** copy `qt-platformtheme.sh` → `/etc/profile.d/`
+> - **YaST Qt theme fix:** YaST doesn't apply Qt themes in tiling window managers. To fix this, copy `qt-platformtheme.sh` → `/etc/profile.d/` and copy user's Kvantum and Qt5 config to `/etc/xdg/Kvantum/` and `/etc/xdg/qt5ct/`
+
 > - **Widget executable:** copy `MediaControl` → `/usr/local/bin/`
 
 ---
