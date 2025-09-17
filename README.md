@@ -54,8 +54,8 @@ It’s messy, but it works for me.
 
 ## Installation
 
-> ⚠️ This configuration does **not** include an installation guide.  
-> It’s highly customized and contains hard-coded paths, so please adapt it to your own setup if you want to use it.
+ ⚠️ This configuration does **not** include an installation guide.  
+ It’s highly customized and contains hard-coded paths, so please adapt it to your own setup if you want to use it.
 
 > **Note**
 > - **YaST Qt theme fix:** YaST doesn't apply Qt themes in tiling window managers. To fix this, copy `qt-platformtheme.sh` → `/etc/profile.d/` make it executable and copy user's Kvantum and Qt5 config files to `/etc/xdg/Kvantum/` and `/etc/xdg/qt5ct/`
