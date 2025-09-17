@@ -40,6 +40,12 @@ It’s messy, but it works for me.
 
 ---
 
+> **Note**
+> - **YaST Qt theme fix:** copy `qt-platformtheme.sh` → `/etc/profile.d/`
+> - **Widget executable:** copy `MediaControl` → `/usr/local/bin/`
+
+---
+
 ## Screenshots
 
 ### Main
