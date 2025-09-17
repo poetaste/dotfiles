@@ -22,13 +22,13 @@ It’s messy, but it works for me.
 
 ## What’s Inside
 
+- **Operating System:** Opensuse Tumbleweed
 - **Window Manager:** [Hyprland](https://github.com/hyprwm/Hyprland)
 - **Colors:** Classic [Gruvbox Dark](https://github.com/morhetz/gruvbox)
 - **Bar/Widgets:** eww (a few custom scripts)
 - **Terminal:** Alacritty
 - **Fonts:** JetBrainsMono Nerd Font
 - **GTK Theme:** Gruvbox Material
-- plus some tiny helper scripts I threw together.
 
 *(Some configs call absolute paths like `/home/myuser/scripts/…` — change these if you try them yourself.)*
 
