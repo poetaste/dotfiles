@@ -38,7 +38,8 @@ It’s messy, but it works for me.
 
 | Normal Desktop | Tiling |
 |-----------------|-------|
-| ![desktop](screenshots/desktop.png) | ![tiling](screenshots/tiling.png) |
+| ![desktop](screenshots/fetch.png) | ![tiling](screenshots/wuhh.png) |
+| ![yast ig](screenshots/yast.png) | ![hyprlock](screenshots/hyprlock.png) |
 
 *(add your own screenshots in `screenshots/` folder)*
 
