@@ -1,0 +1,19 @@
+.imagebox-widget {
+    .image-container {
+        background-color: #b8bb26;
+        padding: 2px;
+        margin: 3px; /* space for shadow to show */
+    }
+
+    .time {
+        font-size: 24px;
+        font-weight: bold;
+        color: #b8bb26;
+    }
+
+    .day {
+        font-family: monospace;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}

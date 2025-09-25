@@ -1,3 +1,5 @@
 (include "calendar/calendar.yuck")
 (include "player/player.yuck")
-(include "date/date.yuck")
+(include "widgets/image.yuck")
+(include "widgets/clock.yuck")
+(include "widgets/music.yuck")

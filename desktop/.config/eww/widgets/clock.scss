@@ -1,0 +1,20 @@
+.clock-widget {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", monospace;
+  color: $fg;
+
+  .clock-time {
+    font-size: 48px;
+    font-weight: 800;
+    color: $fg;
+  }
+
+  .clock-day {
+    font-family: "Pacifico", cursive;
+    font-size: 18px;
+    font-weight: 400; /* Pacifico is already script-like, no need for heavy weight */
+    margin-top: 4px;
+    color: $green-bright;
+  }
+}

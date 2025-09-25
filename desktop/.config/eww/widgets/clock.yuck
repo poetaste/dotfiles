@@ -1,0 +1,27 @@
+;; ─── Variables ──────────────────────────────
+(defpoll time :interval "1s"  "date '+%H:%M'")
+(defpoll day  :interval "60s" "date '+%A, %d %B'")
+
+;; ─── Window ─────────────────────────────────
+(defwindow clock
+ :monitor "eDP-1"
+ :geometry (geometry
+   :x "7%"          ;; adjust position as you like
+   :y "2%"
+   :width "200px"
+   :height "100px")
+ :focusable false
+ :stacking "bg"
+ :exclusive false
+ :anchor "center"
+
+ (box
+   :class "clock-widget"      ;; unique root class
+   :orientation "v"
+   :halign "center"
+   :valign "center"
+   :spacing -30
+   (label :class "clock-time" :text time)
+   (label :class "clock-day"  :text day)
+ )
+)

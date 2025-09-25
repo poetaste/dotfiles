@@ -10,6 +10,10 @@ tooltip {
   font-size: 1rem;
 }
 
-@import "colors.scss";
+
+@import "./colors.scss";
+@import "widgets/music.scss";
+@import "widgets/image.scss";
+@import "widgets/clock.scss";
 @import "calendar/calendar.scss";
 @import "player/player.scss";

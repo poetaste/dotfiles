@@ -1,13 +1,26 @@
-// Eww colors for Emilia rice
-$bg: #000000;
-$bg-alt: #282828;
-$fg: #fbf1c7;
-$black: #a89984;
-$lightblack: #282828;
-$red: #cc241d;
-$blue: #458588;
-$cyan: #689d6a;
-$magenta: #b16286;
-$green: #98971a;
-$yellow: #d79921;
-$archicon: #0f94d2;
+// Gruvbox dark hard palette (original)
+$bg:        #1d2021; // background
+$bg-alt:    #282828; // slightly lighter background
+$fg:        #ebdbb2; // foreground text
+$red:       #cc241d;
+$green:     #98971a;
+$yellow:    #d79921;
+$blue:      #458588;
+$magenta:   #b16286;
+$purple:    #b16286;
+$cyan:      #689d6a;
+$aqua:      #689d6a;
+$orange:    #d65d0e;
+$gray:      #a89984;
+
+// Bright variants
+$red-bright:     #fb4934;
+$green-bright:   #b8bb26;
+$yellow-bright:  #fabd2f;
+$blue-bright:    #83a598;
+$magenta-bright: #d3869b;
+$purple-bright:  #d3869b;
+$cyan-bright:    #8ec07c;
+$aqua-bright:    #8ec07c;
+$orange-bright:  #fe8019;
+$gray-bright:    #ebdbb2; // bright gray/foreground

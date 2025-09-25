@@ -1,0 +1,40 @@
+.music-widget {
+  background: $bg-alt;
+  border: 3px solid $green-bright;
+  border-radius: 0px;
+  padding: 10px;
+  color: $fg;
+  font-family: "JetBrainsMono Nerd Font", "Sans", sans-serif;
+}
+/* Music icon inside this widget only */
+.music-widget .music-icon {
+  font-size: 32px;  
+  color: $yellow;
+  margin-left: 40px;
+}
+
+.music-widget .song-title {
+  font-weight: bold;
+  font-style: italic;      /* added for italic */
+  font-size: 1.1em;
+  color: $green-bright;
+}
+.music-widget .song-artist {
+  font-size: 1em;
+  color: $aqua;
+}
+/* Playback buttons only inside this widget */
+.music-widget .player-controls button {
+  font-size: 30px;              
+  padding: 8px 12px;            
+  min-width: 27px;               
+  min-height: 45px;              
+  border-radius: 6px;            
+  border: none;                  
+  color: $orange;
+  background: none;              
+}
+/* Hover effect for buttons inside this widget only */
+.music-widget .player-controls button:hover {
+  color: $yellow;
+}

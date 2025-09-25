@@ -176,7 +176,7 @@
   :monitor 0
   :geometry
   (geometry
-    :x "80px"
+    :x "57px"
     :y "5px"
   )
 	:wm-ignore false

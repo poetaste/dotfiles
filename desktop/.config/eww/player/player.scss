@@ -1,19 +1,5 @@
-$bg:        #1d2021; // background
-$bg-alt:    #282828; // slightly lighter background
-$fg:        #ebdbb2;
-
-$red:       #cc241d;
-$green:     #98971a;
-$yellow:    #d79921;
-$blue:      #458588;
-$purple:    #b16286; // magenta in your code
-$aqua:      #689d6a;
-$orange:    #d65d0e;
-$gray:      #a89984;
-
-
 .player {
-  font-family: "JetBrainsMono Nerd Font", "Material Design Icons Desktop";
+  font-family: "JetBrainsMono Nerd Font";
   background-color: $bg;
   padding: 0.6rem;
   min-height: 12rem;
@@ -114,12 +100,12 @@ $gray:      #a89984;
     .player-previous,
     .player-next {
       font-size: 1.6rem;
-      color: $fg;
+      color: $purple;
     }
 
     button {
       &:hover {
-        color: $purple;
+        color: $red;
       }
     }
   }

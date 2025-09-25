@@ -1,0 +1,23 @@
+(defwindow imagebox
+ :monitor 0
+ :geometry (geometry
+   :x "0.8%"
+   :y "1%"
+   :width "120px"
+   :height "120px")
+ :focusable false
+ :stacking "bg"
+ :exclusive false
+ :anchor "center"
+
+ (box
+  :class "imagebox-widget"
+  :orientation "h" :spacing 4
+  (box
+   :class "image-container"
+   :width 120 :height 120
+   (image :path "/home/paws/Pictures/funnies/boomy.jpeg"
+          :image-width 114 :image-height 114
+          :image-fit "contain"))
+  )
+)

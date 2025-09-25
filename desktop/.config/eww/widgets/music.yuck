@@ -1,0 +1,88 @@
+;; Poll variables
+(defpoll current-song   :interval "1s" "playerctl metadata title")
+(defpoll current-artist :interval "1s" "playerctl metadata artist")
+(defpoll current-status :interval "1s" "playerctl status")
+
+;; Window
+(defwindow music-widget
+  :monitor 0
+  :geometry (geometry
+    :x "63%"
+    :y "87%"
+    :width "700px"
+    :height "100px")
+  :focusable false
+  :stacking "bg"
+  :exclusive false
+  :anchor "bottom left"
+
+  (box
+    :class "music-widget"
+    :orientation "horizontal"
+    :spacing 10
+    :space-evenly false
+
+    ;; Music icon
+    (box
+      :class "icon-container"
+      :width 40
+      :valign "center"
+      (label :class "music-icon" :text "")
+    )
+
+    ;; Song info box with fixed max width
+
+(box 
+  :orientation "vertical"
+  :spacing 2
+  :hexpand false       ;; prevent box from stretching
+  :valign "center"
+  :width 350           ;; fixed width
+
+(label 
+  :class "song-title"
+  :text current-song
+  :wrap false
+  :ellipsize "end"
+  :hexpand false
+  :limit-width 30
+  :tooltip current-song   ;; shows full title on hover
+)
+
+
+(label 
+  :class "song-artist"
+  :text current-artist
+  :wrap false
+  :ellipsize "end"
+  :hexpand false
+  :limit-width 350
+)
+
+)
+
+    ;; Playback buttons container
+    (box
+      :class "player-controls"
+      :orientation "horizontal"
+      :spacing 5
+      :valign "center"
+      :hexpand true
+
+      (eventbox
+        :cursor "pointer"
+        (button :class "player-previous" :onclick "playerctl previous" "⏮")
+      )
+      (eventbox
+        :cursor "pointer"
+        (button :class "player-toggle" :onclick "playerctl play-pause"
+          {current-status == "Playing" ? "⏸" : "⏵"}
+        )
+      )
+      (eventbox
+        :cursor "pointer"
+        (button :class "player-next" :onclick "playerctl next" "⏭")
+      )
+    )
+  )
+)
