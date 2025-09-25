@@ -9,7 +9,7 @@
 
 ## Screenshots
 
-| Normal Desktop | Tiling |
+| Fetch | Tiling |
 |-----------------|-------|
 | ![desktop](screenshots/fetch.png) | ![tiling](screenshots/wuhh.png) |
 
@@ -17,7 +17,7 @@
 |------|---------|
 | ![yast ig](screenshots/yast.png) | ![hyprlock](screenshots/hyprlock.png) |
 
-| floating windows | 
+| Floating Windows | 
 |--------------|
 | ![ooo floating](screenshots/floating.png) | 
 
