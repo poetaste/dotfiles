@@ -3,7 +3,7 @@
 
  Just my own **Gruvbox-flavored Hyprland** setup.
   
- ⚠️ This is not a plug-and-play dotfiles repo — a lot of the paths and scripts are hardcoded to my machine.
+ ⚠️ This is not a plug-and-play dotfiles repo — some of the paths are hardcoded to my machine.
 
 ---
 
@@ -19,6 +19,10 @@
 |------|---------|
 | ![yast ig](screenshots/yast.png) | ![hyprlock](screenshots/hyprlock.png) |
 
+| floating windows | 
+|--------------|
+| ![ooo floating](screenshots/floating.png) | 
+
 ---
 
 ## Why
@@ -26,7 +30,7 @@
 I built this because I wanted:
 - a **dark, warm look** that doesn’t strain my eyes,
 - tiling workflow with **Hyprland**,  
-- some small tweaks and scripts that just make sense for *my* daily use.
+- a desktop for *my* daily use.
 
 It’s messy, but it works for me.
 
