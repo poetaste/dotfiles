@@ -7,9 +7,9 @@
 (defwindow music-widget
   :monitor 0
   :geometry (geometry
-    :x "63%"
+    :x "66%"
     :y "87%"
-    :width "700px"
+    :width "640px"
     :height "100px")
   :focusable false
   :stacking "bg"
@@ -56,7 +56,8 @@
   :wrap false
   :ellipsize "end"
   :hexpand false
-  :limit-width 350
+  :limit-width 30
+  :tooltip current-song   ;; shows full title on hover
 )
 
 )
