@@ -9,12 +9,10 @@
 
 ## Screenshots
 
-### Main
 | Normal Desktop | Tiling |
 |-----------------|-------|
 | ![desktop](screenshots/fetch.png) | ![tiling](screenshots/wuhh.png) |
 
-### Extras
 | YaST | Hyprlock |
 |------|---------|
 | ![yast ig](screenshots/yast.png) | ![hyprlock](screenshots/hyprlock.png) |
